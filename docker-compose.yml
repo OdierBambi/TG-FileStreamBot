@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 
 services:
   fsb:
@@ -13,5 +13,3 @@ services:
        - BIN_CHANNEL=BIN_CHANNEL # paste channel ID
       ports:
        - 127.0.0.1:8000:8000
-      volumes:
-       - $HOME/TG-FileStreamBot:/app/.env
