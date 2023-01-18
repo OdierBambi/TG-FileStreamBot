@@ -1,10 +1,9 @@
 version: "3.3"
 
 services:
-  fsb:
+  app:
       build: .
-      restart: unless-stopped
-      container_name: fsb
+      command: python3 -m WebStreamer 
       environment:
       # required
        - API_ID=API_ID # change this to your ID
